@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Checkers</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <h1>Online Checkers</h1>
+        <p>Play a classic game of checkers right in your browser.</p>
+      </header>
+
+      <section class="status-panel">
+        <div class="status">
+          <span class="label">Current turn:</span>
+          <span id="current-turn" class="turn-indicator">Red</span>
+        </div>
+        <div class="status">
+          <span class="label">Message:</span>
+          <span id="message">Select a piece to begin.</span>
+        </div>
+        <button id="reset" class="primary">Reset Game</button>
+      </section>
+
+      <section class="board-wrapper">
+        <div id="board" class="board" aria-label="Checkers board"></div>
+      </section>
+
+      <section class="rules">
+        <h2>How to play</h2>
+        <ul>
+          <li>Red moves first. Click a piece, then click a highlighted destination.</li>
+          <li>Captures are mandatory. Multiple captures are enforced when available.</li>
+          <li>Reach the opposite end to crown a king, which can move diagonally both ways.</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
