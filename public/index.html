@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Chess</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chessboardjs@1.0.0/www/css/chessboard-1.0.0.min.css" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Online Chess</h1>
+      <p class="subtitle">Create a room, share the code, and play in real-time.</p>
+
+      <section class="panel controls">
+        <button id="createRoom">Create Room</button>
+        <input id="roomCodeInput" type="text" maxlength="6" placeholder="Room code" />
+        <button id="joinRoom">Join Room</button>
+      </section>
+
+      <section class="panel status" id="status">Not connected to a room.</section>
+
+      <section class="board-wrap">
+        <div id="board" style="width: 480px"></div>
+      </section>
+
+      <section class="panel game-info">
+        <div><strong>Room:</strong> <span id="roomCode">-</span></div>
+        <div><strong>Your role:</strong> <span id="role">-</span></div>
+        <div><strong>Turn:</strong> <span id="turn">white</span></div>
+        <button id="reset">Reset Game</button>
+      </section>
+
+      <section class="panel moves">
+        <h2>Moves</h2>
+        <ol id="moveList"></ol>
+      </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chess.js@0.13.4/chess.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chessboardjs@1.0.0/www/js/chessboard-1.0.0.min.js"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>

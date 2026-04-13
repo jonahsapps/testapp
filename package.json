@@ -1,0 +1,9 @@
+{
+  "name": "online-chess",
+  "version": "1.0.0",
+  "description": "Simple online chess game with room codes",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
